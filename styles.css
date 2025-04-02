@@ -224,3 +224,82 @@ footer ul li a:hover {
         grid-template-columns: 1fr;
     }
 }
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 40px auto;
+}
+.carousel-track-container {
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  list-style: none;
+  gap: 30px;
+  padding: 10px 0;
+}
+.carousel-slide {
+  min-width: 150px;
+}
+.carousel-slide img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.carousel-slide img:hover {
+  transform: scale(1.05);
+}
+.carousel-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  color: #333;
+  z-index: 10;
+}
+.carousel-btn.prev {
+  left: 10px;
+}
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+.modal-image {
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
